@@ -31,6 +31,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func createAccountButton_click(_ sender: Any) {
+        
+        FirebaseManager.createAccount(email: email.text!, password: password.text!, username: username.text!) {
+            (result: String) in
+
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "showProfile", sender: sender)
+            }
+            
+        }
+        
     }
     
 }
