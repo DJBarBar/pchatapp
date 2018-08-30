@@ -27,4 +27,31 @@ class FirebaseManager: NSObject {
                 completion(true) }
         })
     }
+    
+    static func createAccount(email: String, password: String, username: String, completion: @ escaping(_ result: String) -> Void) {
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error)
+            in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            AddUser(username: username, email: email)
+            Login(email: email, password: password) {
+                (success: Bool) in
+                if(success) {
+                    print("Login successful after account creation")
+                } else {
+                    print("Login unsuccesful after account creation")
+                }
+            }
+            completion("")
+        })
+    }
+    
+    static func AddUser(username: String, email: String) {
+        let uid = Auth.auth().currentUser?.uid
+        let post = ["uid":uid!, "username":username, "email":email, "profileImageUrl":""]
+        databaseRef.child("users").child(uid!).setValue(post)
+    }
+    
 }
