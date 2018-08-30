@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4C9D92B77F93EDAFF9C345E /* Pods_pchatapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33A06D7DB1A9DB3918076A7 /* Pods_pchatapp.framework */; };
+		E85320E32134477A00CA3276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320E22134477A00CA3276 /* AppDelegate.swift */; };
+		E85320E52134477A00CA3276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320E42134477A00CA3276 /* ViewController.swift */; };
+		E85320E82134477A00CA3276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85320E62134477A00CA3276 /* Main.storyboard */; };
+		E85320EB2134477A00CA3276 /* pchatapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E85320E92134477A00CA3276 /* pchatapp.xcdatamodeld */; };
+		E85320ED2134477E00CA3276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E85320EC2134477E00CA3276 /* Assets.xcassets */; };
+		E85320F02134477E00CA3276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E85320EE2134477E00CA3276 /* LaunchScreen.storyboard */; };
+		E85320F82134484B00CA3276 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E85320F72134484B00CA3276 /* GoogleService-Info.plist */; };
+		E85320FB213472AF00CA3276 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320FA213472AE00CA3276 /* ProfileTableViewController.swift */; };
+		E85320FD2134730B00CA3276 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320FC2134730B00CA3276 /* ChatViewController.swift */; };
+		E85320FF2134733500CA3276 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85320FE2134733500CA3276 /* SettingsViewController.swift */; };
+		E8532101213479CA00CA3276 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8532100213479CA00CA3276 /* FirebaseManager.swift */; };
+		E85321032135964000CA3276 /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321022135963F00CA3276 /* PostManager.swift */; };
+		E853210521359B8C00CA3276 /* chatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853210421359B8C00CA3276 /* chatTableViewCell.swift */; };
+		E85321072135AA9100CA3276 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321062135AA9100CA3276 /* User.swift */; };
+		E85321092135B6DF00CA3276 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321082135B6DF00CA3276 /* ProfileManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39395CAA750C64CAEF7DF05C /* Pods-pchatapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pchatapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pchatapp/Pods-pchatapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7768FBDC358AE3843C76E06A /* Pods-pchatapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pchatapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-pchatapp/Pods-pchatapp.release.xcconfig"; sourceTree = "<group>"; };
+		B33A06D7DB1A9DB3918076A7 /* Pods_pchatapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pchatapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85320DF2134477A00CA3276 /* pchatapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pchatapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E85320E22134477A00CA3276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E85320E42134477A00CA3276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E85320E72134477A00CA3276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E85320EA2134477A00CA3276 /* pchatapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pchatapp.xcdatamodel; sourceTree = "<group>"; };
+		E85320EC2134477E00CA3276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E85320EF2134477E00CA3276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E85320F12134477E00CA3276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85320F72134484B00CA3276 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E85320F9213449E700CA3276 /* pchatapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = pchatapp.entitlements; sourceTree = "<group>"; };
+		E85320FA213472AE00CA3276 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		E85320FC2134730B00CA3276 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E85320FE2134733500CA3276 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E8532100213479CA00CA3276 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		E85321022135963F00CA3276 /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
+		E853210421359B8C00CA3276 /* chatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatTableViewCell.swift; sourceTree = "<group>"; };
+		E85321062135AA9100CA3276 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E85321082135B6DF00CA3276 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E85320DC2134477A00CA3276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C9D92B77F93EDAFF9C345E /* Pods_pchatapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76DC75AA49A1862D8D8B9BA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39395CAA750C64CAEF7DF05C /* Pods-pchatapp.debug.xcconfig */,
+				7768FBDC358AE3843C76E06A /* Pods-pchatapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		945A155B575AE5D0EA287F6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B33A06D7DB1A9DB3918076A7 /* Pods_pchatapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E85320D62134477A00CA3276 = {
+			isa = PBXGroup;
+			children = (
+				E85320E12134477A00CA3276 /* pchatapp */,
+				E85320E02134477A00CA3276 /* Products */,
+				76DC75AA49A1862D8D8B9BA0 /* Pods */,
+				945A155B575AE5D0EA287F6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E85320E02134477A00CA3276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E85320DF2134477A00CA3276 /* pchatapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E85320E12134477A00CA3276 /* pchatapp */ = {
+			isa = PBXGroup;
+			children = (
+				E85320F9213449E700CA3276 /* pchatapp.entitlements */,
+				E85320E22134477A00CA3276 /* AppDelegate.swift */,
+				E85320E42134477A00CA3276 /* ViewController.swift */,
+				E85320FA213472AE00CA3276 /* ProfileTableViewController.swift */,
+				E85320FC2134730B00CA3276 /* ChatViewController.swift */,
+				E85320FE2134733500CA3276 /* SettingsViewController.swift */,
+				E853210421359B8C00CA3276 /* chatTableViewCell.swift */,
+				E85320E62134477A00CA3276 /* Main.storyboard */,
+				E85320EC2134477E00CA3276 /* Assets.xcassets */,
+				E85320EE2134477E00CA3276 /* LaunchScreen.storyboard */,
+				E85320F12134477E00CA3276 /* Info.plist */,
+				E85320F72134484B00CA3276 /* GoogleService-Info.plist */,
+				E85320E92134477A00CA3276 /* pchatapp.xcdatamodeld */,
+				E8532100213479CA00CA3276 /* FirebaseManager.swift */,
+				E85321022135963F00CA3276 /* PostManager.swift */,
+				E85321062135AA9100CA3276 /* User.swift */,
+				E85321082135B6DF00CA3276 /* ProfileManager.swift */,
+			);
+			path = pchatapp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E85320DE2134477A00CA3276 /* pchatapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E85320F42134477E00CA3276 /* Build configuration list for PBXNativeTarget "pchatapp" */;
+			buildPhases = (
+				922089E52C9B17810829C4F0 /* [CP] Check Pods Manifest.lock */,
+				E85320DB2134477A00CA3276 /* Sources */,
+				E85320DC2134477A00CA3276 /* Frameworks */,
+				E85320DD2134477A00CA3276 /* Resources */,
+				F79ED8DAFF1DAE5FAAD24E6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pchatapp;
+			productName = pchatapp;
+			productReference = E85320DF2134477A00CA3276 /* pchatapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E85320D72134477A00CA3276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Cory Barton";
+				TargetAttributes = {
+					E85320DE2134477A00CA3276 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E85320DA2134477A00CA3276 /* Build configuration list for PBXProject "pchatapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E85320D62134477A00CA3276;
+			productRefGroup = E85320E02134477A00CA3276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E85320DE2134477A00CA3276 /* pchatapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E85320DD2134477A00CA3276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85320F02134477E00CA3276 /* LaunchScreen.storyboard in Resources */,
+				E85320F82134484B00CA3276 /* GoogleService-Info.plist in Resources */,
+				E85320ED2134477E00CA3276 /* Assets.xcassets in Resources */,
+				E85320E82134477A00CA3276 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		922089E52C9B17810829C4F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pchatapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79ED8DAFF1DAE5FAAD24E6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pchatapp/Pods-pchatapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pchatapp/Pods-pchatapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E85320DB2134477A00CA3276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85320E52134477A00CA3276 /* ViewController.swift in Sources */,
+				E85320E32134477A00CA3276 /* AppDelegate.swift in Sources */,
+				E8532101213479CA00CA3276 /* FirebaseManager.swift in Sources */,
+				E85321092135B6DF00CA3276 /* ProfileManager.swift in Sources */,
+				E85320FB213472AF00CA3276 /* ProfileTableViewController.swift in Sources */,
+				E85320FD2134730B00CA3276 /* ChatViewController.swift in Sources */,
+				E853210521359B8C00CA3276 /* chatTableViewCell.swift in Sources */,
+				E85321032135964000CA3276 /* PostManager.swift in Sources */,
+				E85320EB2134477A00CA3276 /* pchatapp.xcdatamodeld in Sources */,
+				E85321072135AA9100CA3276 /* User.swift in Sources */,
+				E85320FF2134733500CA3276 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E85320E62134477A00CA3276 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E85320E72134477A00CA3276 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E85320EE2134477E00CA3276 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E85320EF2134477E00CA3276 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E85320F22134477E00CA3276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E85320F32134477E00CA3276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E85320F52134477E00CA3276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39395CAA750C64CAEF7DF05C /* Pods-pchatapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pchatapp/pchatapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y7BXN4F4K;
+				INFOPLIST_FILE = pchatapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coryb.pchatapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E85320F62134477E00CA3276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7768FBDC358AE3843C76E06A /* Pods-pchatapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = pchatapp/pchatapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Y7BXN4F4K;
+				INFOPLIST_FILE = pchatapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coryb.pchatapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E85320DA2134477A00CA3276 /* Build configuration list for PBXProject "pchatapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85320F22134477E00CA3276 /* Debug */,
+				E85320F32134477E00CA3276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E85320F42134477E00CA3276 /* Build configuration list for PBXNativeTarget "pchatapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85320F52134477E00CA3276 /* Debug */,
+				E85320F62134477E00CA3276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E85320E92134477A00CA3276 /* pchatapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E85320EA2134477A00CA3276 /* pchatapp.xcdatamodel */,
+			);
+			currentVersion = E85320EA2134477A00CA3276 /* pchatapp.xcdatamodel */;
+			path = pchatapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E85320D72134477A00CA3276 /* Project object */;
+}
