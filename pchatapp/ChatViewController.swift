@@ -13,6 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedUser: User?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var userInput: UITextField!
     
     
     override func viewDidLoad() {
@@ -34,6 +35,13 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidDisappear(animated)
         PostManager.posts = []
     }
+    
+    @IBAction func sendButton_click(_ sender: Any) {
+        
+        
+        
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
