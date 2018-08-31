@@ -41,6 +41,21 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
     
     @IBAction func uploadButton_click(_ sender: Any) {
         
+        uploadPhoto()
+        
+    }
+    
+    func uploadPhoto() {
+        
+        selectedUser?.uploadProfilePhoto(profileImage: imageView.image!)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let pickerInfo: NSDictionary = info as NSDictionary
+        let img: UIImage = pickerInfo.object(forKey: UIImagePickerController.InfoKey.originalImage) as! UIImage
+        imageView.image = img
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*

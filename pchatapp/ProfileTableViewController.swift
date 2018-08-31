@@ -111,7 +111,7 @@ class ProfileTableViewController: UITableViewController {
             destinationViewController.selectedUser = selectedUser
         } else if segue.identifier == "showSettingsView",
             let destinationViewController = segue.destination as? SettingsViewController {
-            //destinationViewController.selectedUser = selectedUser
+            destinationViewController.selectedUser = ProfileManager.getCurrentUser(uid: FirebaseManager.currentUserId)
         }
     }
     
