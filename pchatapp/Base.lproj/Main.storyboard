@@ -54,16 +54,16 @@
                                 </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Eu-5q-rck">
-                                <rect key="frame" x="16" y="617" width="294" height="30"/>
+                                <rect key="frame" x="16" y="617" width="290" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="2bF-OD-1G3"/>
+                                    <constraint firstAttribute="width" constant="290" id="2bF-OD-1G3"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-5n-sHd">
-                                <rect key="frame" x="318" y="617" width="36" height="30"/>
+                                <rect key="frame" x="314" y="617" width="40" height="30"/>
                                 <state key="normal" title="Send"/>
                                 <connections>
                                     <action selector="sendButton_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAp-dT-gE9"/>
@@ -197,6 +197,7 @@
                                         <constraint firstItem="xh4-OE-NmQ" firstAttribute="centerY" secondItem="n28-v8-mTP" secondAttribute="centerY" id="NVy-Sj-4bc"/>
                                         <constraint firstAttribute="trailing" secondItem="xh4-OE-NmQ" secondAttribute="trailing" constant="214" id="Pb1-vB-GOd"/>
                                         <constraint firstItem="xh4-OE-NmQ" firstAttribute="leading" secondItem="9ir-BE-gmh" secondAttribute="leading" id="UQR-eD-ZkL"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="n28-v8-mTP" secondAttribute="trailing" constant="20" symbolic="YES" id="glG-la-0yl"/>
                                         <constraint firstItem="n28-v8-mTP" firstAttribute="leading" secondItem="xh4-OE-NmQ" secondAttribute="trailing" constant="8" id="xKo-VL-kbo"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -247,6 +248,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Q2c-Nz-53P"/>
                                 </constraints>
                                 <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="uploadButton_click:" destination="Ep9-Sc-spp" eventType="touchUpInside" id="uEr-dg-OKJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aR-zG-YvD">
                                 <rect key="frame" x="16" y="336" width="343" height="30"/>
@@ -254,22 +258,38 @@
                                     <constraint firstAttribute="height" constant="30" id="izf-Fm-mXr"/>
                                 </constraints>
                                 <state key="normal" title="Get Photo"/>
+                                <connections>
+                                    <action selector="getPhotoButton_click:" destination="Ep9-Sc-spp" eventType="touchUpInside" id="4et-FE-Ejl"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWv-uP-81S">
+                                <rect key="frame" x="67" y="295" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="s2K-Q8-7I3" firstAttribute="leading" secondItem="2Uv-lj-SPf" secondAttribute="leading" constant="16" id="2VH-lf-Hfw"/>
                             <constraint firstItem="ejr-8t-fog" firstAttribute="leading" secondItem="2Uv-lj-SPf" secondAttribute="leading" constant="67" id="5mA-NQ-33B"/>
                             <constraint firstItem="9aR-zG-YvD" firstAttribute="leading" secondItem="2Uv-lj-SPf" secondAttribute="leading" constant="16" id="91C-Xt-1Er"/>
+                            <constraint firstItem="ZWv-uP-81S" firstAttribute="leading" secondItem="2Uv-lj-SPf" secondAttribute="leading" constant="67" id="9Zt-1w-ev3"/>
+                            <constraint firstItem="2Uv-lj-SPf" firstAttribute="trailing" secondItem="ZWv-uP-81S" secondAttribute="trailing" constant="68" id="Buy-cP-6ut"/>
                             <constraint firstItem="2Uv-lj-SPf" firstAttribute="trailing" secondItem="ejr-8t-fog" secondAttribute="trailing" constant="68" id="ErZ-ag-tKe"/>
                             <constraint firstItem="9aR-zG-YvD" firstAttribute="top" secondItem="ejr-8t-fog" secondAttribute="bottom" constant="89" id="KjN-3S-RLS"/>
                             <constraint firstItem="2Uv-lj-SPf" firstAttribute="trailing" secondItem="9aR-zG-YvD" secondAttribute="trailing" constant="16" id="MSv-Bl-vo7"/>
+                            <constraint firstItem="ZWv-uP-81S" firstAttribute="top" secondItem="ejr-8t-fog" secondAttribute="bottom" constant="48" id="WV2-Xc-hTq"/>
                             <constraint firstItem="2Uv-lj-SPf" firstAttribute="trailing" secondItem="s2K-Q8-7I3" secondAttribute="trailing" constant="16" id="a6H-vo-ULk"/>
                             <constraint firstItem="ejr-8t-fog" firstAttribute="top" secondItem="2Uv-lj-SPf" secondAttribute="top" constant="55" id="jp3-sq-3HD"/>
                             <constraint firstItem="s2K-Q8-7I3" firstAttribute="top" secondItem="9aR-zG-YvD" secondAttribute="bottom" constant="27" id="nkr-to-0qE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Uv-lj-SPf"/>
                     </view>
+                    <connections>
+                        <outlet property="displayName" destination="ZWv-uP-81S" id="nzG-jY-saR"/>
+                        <outlet property="imageView" destination="ejr-8t-fog" id="2wy-hj-XjG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gav-dB-L0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -53,7 +53,7 @@ class ProfileTableViewController: UITableViewController {
         let u = ProfileManager.users[indexPath.row]
         cell.cellName.text = u.username
         if(u.profileImageUrl != "") {
-            //u.getProfileImage()
+            cell.cellImage.image = u.getProfileImage()
         } else {
             cell.cellImage.image = UIImage(named: "emoji")
         }
