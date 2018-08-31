@@ -23,6 +23,7 @@
 		E853210521359B8C00CA3276 /* chatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E853210421359B8C00CA3276 /* chatTableViewCell.swift */; };
 		E85321072135AA9100CA3276 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321062135AA9100CA3276 /* User.swift */; };
 		E85321092135B6DF00CA3276 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321082135B6DF00CA3276 /* ProfileManager.swift */; };
+		E8E8D74E21387446008D4CA1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8D74D21387446008D4CA1 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E853210421359B8C00CA3276 /* chatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatTableViewCell.swift; sourceTree = "<group>"; };
 		E85321062135AA9100CA3276 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E85321082135B6DF00CA3276 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		E8E8D74D21387446008D4CA1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,10 @@
 				E85320E22134477A00CA3276 /* AppDelegate.swift */,
 				E85320E42134477A00CA3276 /* ViewController.swift */,
 				E85320FA213472AE00CA3276 /* ProfileTableViewController.swift */,
+				E8E8D74D21387446008D4CA1 /* ProfileTableViewCell.swift */,
 				E85320FC2134730B00CA3276 /* ChatViewController.swift */,
-				E85320FE2134733500CA3276 /* SettingsViewController.swift */,
 				E853210421359B8C00CA3276 /* chatTableViewCell.swift */,
+				E85320FE2134733500CA3276 /* SettingsViewController.swift */,
 				E85320E62134477A00CA3276 /* Main.storyboard */,
 				E85320EC2134477E00CA3276 /* Assets.xcassets */,
 				E85320EE2134477E00CA3276 /* LaunchScreen.storyboard */,
@@ -253,6 +256,7 @@
 				E853210521359B8C00CA3276 /* chatTableViewCell.swift in Sources */,
 				E85321032135964000CA3276 /* PostManager.swift in Sources */,
 				E85320EB2134477A00CA3276 /* pchatapp.xcdatamodeld in Sources */,
+				E8E8D74E21387446008D4CA1 /* ProfileTableViewCell.swift in Sources */,
 				E85321072135AA9100CA3276 /* User.swift in Sources */,
 				E85320FF2134733500CA3276 /* SettingsViewController.swift in Sources */,
 			);

@@ -1,21 +1,22 @@
 //
-//  chatTableViewCell.swift
+//  ProfileTableViewCell.swift
 //  pchatapp
 //
-//  Created by Cory Barton on 8/28/18.
+//  Created by Cory Barton on 8/30/18.
 //  Copyright © 2018 Cory Barton. All rights reserved.
 //
 
 import UIKit
 
-class chatTableViewCell: UITableViewCell {
+class ProfileTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var messageText: UILabel!
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellName: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        messageText.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
