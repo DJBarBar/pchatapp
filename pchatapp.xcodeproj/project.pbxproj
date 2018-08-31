@@ -24,6 +24,7 @@
 		E85321072135AA9100CA3276 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321062135AA9100CA3276 /* User.swift */; };
 		E85321092135B6DF00CA3276 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85321082135B6DF00CA3276 /* ProfileManager.swift */; };
 		E8E8D74E21387446008D4CA1 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8D74D21387446008D4CA1 /* ProfileTableViewCell.swift */; };
+		E8E8D7502139BABB008D4CA1 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8D74F2139BABB008D4CA1 /* RemoteConfigManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		E85321062135AA9100CA3276 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E85321082135B6DF00CA3276 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		E8E8D74D21387446008D4CA1 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		E8E8D74F2139BABB008D4CA1 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E85321022135963F00CA3276 /* PostManager.swift */,
 				E85321062135AA9100CA3276 /* User.swift */,
 				E85321082135B6DF00CA3276 /* ProfileManager.swift */,
+				E8E8D74F2139BABB008D4CA1 /* RemoteConfigManager.swift */,
 			);
 			path = pchatapp;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-pchatapp/Pods-pchatapp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -232,6 +236,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -252,6 +257,7 @@
 				E8532101213479CA00CA3276 /* FirebaseManager.swift in Sources */,
 				E85321092135B6DF00CA3276 /* ProfileManager.swift in Sources */,
 				E85320FB213472AF00CA3276 /* ProfileTableViewController.swift in Sources */,
+				E8E8D7502139BABB008D4CA1 /* RemoteConfigManager.swift in Sources */,
 				E85320FD2134730B00CA3276 /* ChatViewController.swift in Sources */,
 				E853210521359B8C00CA3276 /* chatTableViewCell.swift in Sources */,
 				E85321032135964000CA3276 /* PostManager.swift in Sources */,

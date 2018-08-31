@@ -39,7 +39,7 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
         
     }
     
-    @IBAction func uploadButton_click(_ sender: Any) {
+    @IBAction func uploadButton_click(_ sender: AnyObject) {
         
         uploadPhoto()
         
