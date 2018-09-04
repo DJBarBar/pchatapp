@@ -115,7 +115,6 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9p-s2-7Bb">
                                 <rect key="frame" x="16" y="208" width="343" height="30"/>
-                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginButton_click:" destination="GIx-uh-Fgr" eventType="touchUpInside" id="2Kn-4s-y6c"/>
                                 </connections>
@@ -156,6 +155,7 @@
                     </view>
                     <connections>
                         <outlet property="email" destination="0Yp-iN-RCj" id="1Lb-MH-nXE"/>
+                        <outlet property="loginButton" destination="h9p-s2-7Bb" id="71i-Xn-Kq6"/>
                         <outlet property="password" destination="xNO-Fw-M57" id="sVD-kR-hAj"/>
                         <outlet property="username" destination="f2P-e0-Rk1" id="b2g-Mx-UEU"/>
                         <segue destination="XZg-3N-kgP" kind="show" identifier="showProfile" id="Opa-IO-O4W"/>
@@ -289,6 +289,7 @@
                     <connections>
                         <outlet property="displayName" destination="ZWv-uP-81S" id="nzG-jY-saR"/>
                         <outlet property="imageView" destination="ejr-8t-fog" id="2wy-hj-XjG"/>
+                        <outlet property="photoUpdate" destination="s2K-Q8-7I3" id="Ghf-1R-IDG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gav-dB-L0H" userLabel="First Responder" sceneMemberID="firstResponder"/>

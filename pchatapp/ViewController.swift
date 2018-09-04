@@ -13,11 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        RemoteConfigManager.remoteConfigInit(firstControl: self.loginButton)
     }
     
     @IBAction func loginButton_click(_ sender: Any) {
